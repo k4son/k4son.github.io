@@ -1,0 +1,11 @@
+title: k4son
+description: k4son 的个人网站 — LLM · 逆向工程 · TypeScript
+lang: zh-CN
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      permalink: /blog/:year/:month/:day/:title/

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>{{ page.title }} · k4son</title>
+<link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+
+<nav class="topnav">
+  <div class="container topnav-inner">
+    <a class="topnav-brand" href="/">k4son<span>.</span></a>
+    <div class="topnav-links">
+      <a href="/">首页 Home</a>
+      <a href="/blog/">博客 Blog</a>
+      <a href="https://github.com/k4son" target="_blank" rel="noopener">GitHub</a>
+    </div>
+  </div>
+</nav>
+
+<main class="container page-main">
+{{ content }}
+</main>
+
+<footer>
+  <div class="container">
+    <p>最好的学习方式是动手构建 · <span class="bilingual-en">The best way to learn is to build.</span></p>
+    <p class="mono" style="margin-top:8px;">
+      <a href="https://github.com/k4son" target="_blank" rel="noopener">github.com/k4son</a>
+      · {{ site.time | date: "%Y" }}
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

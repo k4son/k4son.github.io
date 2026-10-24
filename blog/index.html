@@ -1,0 +1,17 @@
+---
+layout: default
+title: 博客 / Blog
+---
+<h2>📝 博客 <span class="bilingual-en">/ Blog</span></h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+  <li>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+    {% if post.excerpt %}<p class="post-excerpt">{{ post.excerpt | strip_html }}</p>{% endif %}
+  </li>
+  {% endfor %}
+  {% if site.posts.size == 0 %}
+  <li><span class="skeleton">还没有文章 · No posts yet</span></li>
+  {% endif %}
+</ul>
